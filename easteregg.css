@@ -1,4 +1,79 @@
 body > span:hover ~ main{
     color:white;
-    background-image: url(https://i.pinimg.com/originals/10/e2/51/10e25192f5555c284d49d90fadba5855.png);
+    animation:sparafleshing 0.2s ease infinite;
+    background-size:cover;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+main > h1{
+    text-align:center;
+}
+
+.title-card{
+    margin:auto;
+    width:70vw;
+    height: 31vh;
+    border-radius:15px;
+    /* background-image: linear-gradient(to bottom right, rgb(153, 0, 255) , yellow); */
+    padding:0.5%;
+}
+
+.title-card .card-img{
+    float:left;
+    width:31.60%;
+    height:100%;
+    background-size:cover;
+    background-position:bottom;
+    margin-left:15px;
+    border-radius:15px;
+    box-shadow: 2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
+    animation:zoom-out 1s;
+}
+
+.title-card .card-img:hover{
+    animation: zoom-in 1s forwards;
+}
+
+.card-img.a1{
+    background-image: url(img/pexels-bill-emrich-230794-0.jpg);
+}
+.card-img.a2{
+    background-image: url(img/pexels-bill-emrich-230794-1.jpg);
+
+}.card-img.a3{
+    background-image: url(img/pexels-bill-emrich-230794-2.jpg);
+}
+
+@keyframes zoom-in {
+    0% {
+      transform: scale(1, 1);
+      
+    }
+    100% {
+      box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+      transform: scale(1.1, 1.1);
+    }
+}
+
+@keyframes zoom-out {
+    0% {
+      transform: scale(1.1, 1.1);
+      box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    }
+    100% {
+      box-shadow: 2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
+      transform: scale(1, 1);
+    }
+}
+
+@keyframes sparafleshing {
+    0% {
+        background-image:linear-gradient(white);
+    }
+    100%{
+        background-image: url(https://i.pinimg.com/originals/10/e2/51/10e25192f5555c284d49d90fadba5855.png);
+    }
 }
