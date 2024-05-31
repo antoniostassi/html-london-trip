@@ -1,0 +1,4 @@
+body > p:hover ~ main{
+    color:white;
+    background-image: url(https://i.pinimg.com/originals/10/e2/51/10e25192f5555c284d49d90fadba5855.png);
+}
